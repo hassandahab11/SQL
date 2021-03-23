@@ -31,3 +31,5 @@ INSERT INTO `STUDENTS_LANGUAGES` (`ID`, `STUDENT_ID`, `LANGUAGES_ID`) VALUES ('1
 // Rapport lvl 1
 SELECT * FROM students WHERE id = 3
 SELECT * FROM students WHERE id = 6
+SELECT * FROM students WHERE id = 1
+SELECT Name FROM students WHERE id = 2
