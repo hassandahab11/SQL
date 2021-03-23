@@ -33,3 +33,5 @@ SELECT * FROM students WHERE id = 3
 SELECT * FROM students WHERE id = 6
 SELECT * FROM students WHERE id = 1
 SELECT Name FROM students WHERE id = 2
+SELECT * FROM students WHERE Ville = "paris"
+SELECT * FROM students WHERE Ville = "Lyon"
