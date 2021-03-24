@@ -35,3 +35,8 @@ SELECT * FROM students WHERE id = 1
 SELECT Name FROM students WHERE id = 2
 SELECT * FROM students WHERE Ville = "paris"
 SELECT * FROM students WHERE Ville = "Lyon"
+
+//  Rapport lvl 2
+SELECT * FROM favorites WHERE id = 5;
+SELECT students.Name , favorites.sport FROM students , favorites WHERE students.ID = 4 AND favorites.students_Id = 4
+SELECT students.Name , favorites.class FROM students , favorites WHERE students.ID = 1 AND favorites.students_Id = 1
