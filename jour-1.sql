@@ -41,3 +41,11 @@ SELECT * FROM favorites WHERE id = 5;
 SELECT students.Name , favorites.sport FROM students , favorites WHERE students.ID = 4 AND favorites.students_Id = 4
 SELECT students.Name , favorites.class FROM students , favorites WHERE students.ID = 1 AND favorites.students_Id = 1
 SELECT * FROM students INNER JOIN favorites ON  favorites.students_Id = students.id WHERE favorites.class ="music"
+SELECT name FROM students INNER JOIN favorites ON students.id = favorites.id WHERE favorites.sport = 'Tennis';
+SELECT name FROM students INNER JOIN favorites ON students.id = favorites.id WHERE favorites.class = 'Arts';
+SELECT students.id, name, count(*) as languagesCount FROM students INNER JOIN students_languages ON students_languages.id = students.id group by students.id
+
+
+// Rapport lvl 3
+SELECT name FROM students WHERE name LIKE '%e%'
+SELECT name, sport FROM students JOIN favorites ON students.id = favorites.id WHERE name LIKE '%e%'
