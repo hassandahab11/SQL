@@ -40,3 +40,4 @@ SELECT * FROM students WHERE Ville = "Lyon"
 SELECT * FROM favorites WHERE id = 5;
 SELECT students.Name , favorites.sport FROM students , favorites WHERE students.ID = 4 AND favorites.students_Id = 4
 SELECT students.Name , favorites.class FROM students , favorites WHERE students.ID = 1 AND favorites.students_Id = 1
+SELECT * FROM students INNER JOIN favorites ON  favorites.students_Id = students.id WHERE favorites.class ="music"
