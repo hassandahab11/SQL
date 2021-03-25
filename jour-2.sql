@@ -27,3 +27,10 @@ CREATE TABLE programming
 )
 
 INSERT INTO `programming` (`id`, `name`, `fk_programming_id`) VALUES (NULL, 'react', '1'), (NULL, 'sql', '2');
+
+
+
+// Exo 
+SELECT* FROM candidates
+SELECT COUNT(*) FROM candidates
+

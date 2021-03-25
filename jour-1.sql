@@ -43,7 +43,7 @@ SELECT students.Name , favorites.class FROM students , favorites WHERE students.
 SELECT * FROM students INNER JOIN favorites ON  favorites.students_Id = students.id WHERE favorites.class ="music"
 SELECT name FROM students INNER JOIN favorites ON students.id = favorites.id WHERE favorites.sport = 'Tennis';
 SELECT name FROM students INNER JOIN favorites ON students.id = favorites.id WHERE favorites.class = 'Arts';
-SELECT students.id, name, count(*) as languagesCount FROM students INNER JOIN students_languages ON students_languages.id = students.id group by students.id
+SELECT students.id, name, count(*) as languagesCount FROM students INNER JOIN languages ON student.id = students.id group by students.id
 
 
 // Rapport lvl 3
